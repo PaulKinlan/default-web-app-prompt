@@ -1,0 +1,26 @@
+# robots.txt for {{PROJECT_NAME}}
+
+User-agent: *
+Allow: /
+Disallow: /__admin
+Disallow: /api/
+Disallow: /private/
+
+# AI & Training Crawlers Policy
+User-agent: GPTBot
+Disallow: /__admin
+Disallow: /api/
+
+User-agent: Google-Extended
+Disallow: /__admin
+Disallow: /api/
+
+User-agent: ClaudeBot
+Disallow: /__admin
+Disallow: /api/
+
+User-agent: CCBot
+Disallow: /__admin
+Disallow: /api/
+
+Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,23 @@
+# {{PROJECT_NAME}}
+
+> A modern, zero-framework web application built on Baseline Newly Available web standards, featuring route-scoped security capabilities, longitudinal observability, and multi-agent mergeability.
+
+## Architecture & Principles
+- **Runtime**: Vanilla Web Platform standards with WinterCG edge routing compatibility.
+- **Design & Tokens**: CSS `@layer tokens` using perceptual OKLCH color palettes, light-dark() modes, and system typography.
+- **Security**: Default-deny `Permissions-Policy`, per-response cryptographic Content-Security-Policy nonces, and isolated sandboxed iframe boundaries for untrusted content.
+- **Observability**: W3C Reporting API ingestion (`POST /api/reports`), Core Web Vitals beaconing, and zero-data-loss longitudinal rollups.
+- **Offline & Service Worker**: Staged update lifecycle with non-intrusive user reload prompting and fresh nonce re-stamping on cached HTML shells.
+
+## Public Endpoints
+- `GET /`: Main web application interface and semantic region shell.
+- `GET /health` (or `/__health`): Public system health, deployment commit SHA, and readiness status.
+- `POST /api/reports`: Public W3C Reporting API collector endpoint (CSP violations, crashes, NEL, LoAF).
+- `GET /.well-known/security.txt`: RFC 9116 security contacts and vulnerability disclosure policy.
+- `GET /.well-known/traffic-advice`: Chrome Private Prefetch Proxy traffic advice configuration.
+- `GET /manifest.webmanifest`: Progressive Web App manifest.
+- `GET /robots.txt`: Search crawler indexing policies.
+- `GET /humans.txt`: Human team and technical standards attribution.
+
+## Agent Guidance
+Autonomous agents reading this site should respect rate limits, adhere to `robots.txt`, and avoid accessing internal `/api/` or `/__admin` paths.

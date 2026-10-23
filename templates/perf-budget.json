@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Production Performance Budget Manifest",
+  "ratchet": true,
+  "thresholds": {
+    "maxInitialHtmlGzipBytes": 14336,
+    "maxInitialCssGzipBytes": 8192,
+    "maxInitialJsGzipBytes": 4096,
+    "maxTotalCriticalGzipBytes": 20480,
+    "maxInitialRequests": 4,
+    "maxDomNodes": 800,
+    "maxRenderBlockingResources": 0
+  },
+  "cwvTargets": {
+    "lcpMs": { "target": 1200, "floor": 2500 },
+    "inpMs": { "target": 50, "floor": 200 },
+    "cls": { "target": 0.0, "floor": 0.1 }
+  },
+  "rules": {
+    "requireExplicitMediaDimensions": true,
+    "requireLcpHighFetchPriority": true,
+    "banRenderBlockingScripts": true,
+    "requireContentVisibilityOnOffscreen": true,
+    "requireYieldOnLongTasks": true
+  }
+}

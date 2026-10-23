@@ -1,0 +1,37 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "{{PROJECT_NAME}}",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "{{PROJECT_NAME}}-db",
+      "database_id": "TODO_PROVISION_D1_ID"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "OBS_STORE",
+        "class_name": "ObservabilityStoreDO"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["ObservabilityStoreDO"]
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

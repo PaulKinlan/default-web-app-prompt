@@ -1,0 +1,11 @@
+# /.well-known/security.txt — RFC 9116
+# Security policy and vulnerability disclosure contacts for {{PROJECT_NAME}}
+
+Contact: mailto:security@example.com
+Contact: https://example.com/security
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://example.com/.well-known/security.txt
+Policy: https://example.com/security/policy
+Hiring: https://example.com/careers
+Acknowledgments: https://example.com/security/hall-of-fame

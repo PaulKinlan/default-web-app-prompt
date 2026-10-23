@@ -1,0 +1,14 @@
+# Dependencies & build outputs
+node_modules/
+.generated/
+dist/
+build/
+
+# Runtime & secrets
+.wrangler/
+.dev.vars
+*.log
+
+# System files
+.DS_Store
+Thumbs.db

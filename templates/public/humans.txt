@@ -1,0 +1,17 @@
+/* TEAM */
+  Developer: Team {{PROJECT_NAME}}
+  Contact: hello@example.com
+  From: Earth
+
+/* THANKS */
+  Web Platform Community
+  Baseline Newly Available Standards Authors
+
+/* SITE */
+  Standards: HTML5, CSS OKLCH (@layer tokens), ESNext Modules, WinterCG, W3C Reporting API, Service Worker
+  Components: Native Web Components, Micro-Bus Architecture, Zero-Framework
+  Software: Modern Browser Web Platform
+  Last update: 2026/10/24
+  Language: English
+  Doctype: HTML5
+  IDE: Antigravity
